@@ -11,15 +11,19 @@
     <script>
       var unityInstance = UnityLoader.instantiate("unityContainer", "Build/BlockDashWebGL.json", {onProgress: UnityProgress});
     </script>
+	  <style>
+    body {
+      background-color: lightblue;
+    }
+  </style>
+  
   </head>
-  <body>
-    <div class="webgl-content">
-      <div id="unityContainer" style="width: 400px; height: 800px"></div>
-      <div class="footer">
-        <div class="webgl-logo"></div>
-        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
-        <div class="title">Block Dash</div>
-      </div>
-    </div>
+  <body style="background-color: rgb(5, 5, 5);">
+	<div class="webgl-content">
+	  <div id="unityContainer" style="width: 400px; height: 800px"></div>
+	  <!-- <div class="footer">
+		<div class="webgl-logo"></div>
+	  </div> -->
+	</div>
   </body>
 </html>
